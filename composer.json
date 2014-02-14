@@ -1,0 +1,21 @@
+{
+	"name": "indigophp/fuel-supervisor",
+	"type": "fuel-package",
+	"description": "Fuel wrapper around Indigo Supervisor package",
+	"keywords": ["supervisor", "process manager"],
+	"homepage": "https://indigophp.com",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Márk Sági-Kazár",
+			"email": "mark.sagikazar@gmail.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0",
+		"indigophp/supervisor": "self.version"
+	},
+	"extra": {
+		"installer-name": "supervisor"
+	}
+}

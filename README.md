@@ -1,5 +1,9 @@
 # Fuel Supervisor
 
+[![Latest Stable Version](https://poser.pugx.org/indigophp/fuel-supervisor/v/stable.png)](https://packagist.org/packages/indigophp/fuel-supervisor)
+[![Total Downloads](https://poser.pugx.org/indigophp/fuel-supervisor/downloads.png)](https://packagist.org/packages/indigophp/fuel-supervisor)
+[![License](https://poser.pugx.org/indigophp/fuel-supervisor/license.png)](https://packagist.org/packages/indigophp/fuel-supervisor)
+
 **This package is a wrapper around [indigophp/supervisor](https://github.com/indigophp/supervisor) package.**
 
 

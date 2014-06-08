@@ -31,19 +31,9 @@ Via Composer
 ## Configuration
 
 ``` php
-/**
- * Default instance
- */
-'default' => 'default',
-
-/**
- * Connector instances
- */
-'connector' => array(
-    'default' => function() {
-        return new Indigo\Supervisor\Connector\SomeConnector;
-    },
-),
+'default' => function() {
+    return new Indigo\Supervisor\Connector\SomeConnector;
+},
 ```
 
 

@@ -1,14 +1,12 @@
 <?php
-/**
- * Fuel Supervisor
+
+/*
+ * This file is part of the Fuel Supervisor package.
  *
- * @package     Fuel
- * @subpackage  Supervisor
- * @version     1.1.1
- * @author      Márk Sági-Kazár <mark.sagikazar@gmail.com>
- * @license     MIT License
- * @copyright   2013 - 2014 Indigo Development Team
- * @link        https://indigophp.com
+ * (c) Indigo Development Team
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 /**
@@ -21,13 +19,5 @@
  */
 
 return array(
-    /**
-     * Default instance
-     */
-    'default' => 'default',
 
-    /**
-     * Connector instances
-     */
-    'connector' => array(),
 );

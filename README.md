@@ -1,5 +1,6 @@
 # Fuel Supervisor
 
+[![Build Status](https://travis-ci.org/indigophp/fuel-supervisor.svg?branch=develop)](https://travis-ci.org/indigophp/fuel-supervisor)
 [![Latest Stable Version](https://poser.pugx.org/indigophp/fuel-supervisor/v/stable.png)](https://packagist.org/packages/indigophp/fuel-supervisor)
 [![Total Downloads](https://poser.pugx.org/indigophp/fuel-supervisor/downloads.png)](https://packagist.org/packages/indigophp/fuel-supervisor)
 [![License](https://poser.pugx.org/indigophp/fuel-supervisor/license.png)](https://packagist.org/packages/indigophp/fuel-supervisor)

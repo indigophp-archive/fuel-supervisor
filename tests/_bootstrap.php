@@ -9,5 +9,3 @@ $_SERVER['vendor_path']  = __DIR__ . '/../../../vendor/';
 
 require_once __DIR__ . '/../../../core/bootstrap_phpunit.php';
 require_once __DIR__ . '/../vendor/autoload.php';
-
-\Package::load('supervisor');

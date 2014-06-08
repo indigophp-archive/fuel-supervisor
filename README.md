@@ -37,6 +37,13 @@ Via Composer
 ```
 
 
+## Testing
+
+``` bash
+$ codecept run
+```
+
+
 ## Credits
 
 - [Márk Sági-Kazár](https://github.com/sagikazarmark)

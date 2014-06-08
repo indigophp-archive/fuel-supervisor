@@ -4,18 +4,18 @@ php:
   - 5.5
 
 script:
-  - cd /tmp/fuel/fuel/packages/skeleton/
+  - cd /tmp/fuel/fuel/packages/supervisor/
   - vendor/bin/codecept run unit --coverage --xml
 
 before_script:
   - curl get.fuelphp.com/oil | sh
   - cd /tmp
   - oil create fuel
-  - cp -r $TRAVIS_BUILD_DIR fuel/fuel/packages/skeleton/
-  - cd fuel/fuel/packages/skeleton/
+  - cp -r $TRAVIS_BUILD_DIR fuel/fuel/packages/supervisor/
+  - cd fuel/fuel/packages/supervisor/
   - composer install
   - wget https://scrutinizer-ci.com/ocular.phar
 
 after_script:
-  - cd /tmp/fuel/fuel/packages/skeleton/
+  - cd /tmp/fuel/fuel/packages/supervisor/
   - php ocular.phar code-coverage:upload --format=php-clover tests/_log/coverage.xml

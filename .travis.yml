@@ -5,7 +5,7 @@ php:
 
 script:
   - cd /tmp/fuel/fuel/packages/supervisor/
-  - vendor/bin/codecept run unit --coverage --xml
+  - vendor/bin/codecept run
 
 before_script:
   - curl get.fuelphp.com/oil | sh
@@ -15,7 +15,3 @@ before_script:
   - cd fuel/fuel/packages/supervisor/
   - composer install
   - wget https://scrutinizer-ci.com/ocular.phar
-
-after_script:
-  - cd /tmp/fuel/fuel/packages/supervisor/
-  - php ocular.phar code-coverage:upload --format=php-clover tests/_output/coverage.xml

@@ -16,20 +16,21 @@ use Indigo\Supervisor\Connector\ConnectorInterface;
 use InvalidArgumentException;
 
 /**
- * Supervisor Forge class
+ * Supervisor Facade class
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class Supervisor extends \Forge
+class Supervisor extends \Facade
 {
-	use \Indigo\Core\Forge\Instance;
+	use \Indigo\Core\Facade\Instance;
 
 	protected static $_config = 'supervisor';
 
 	/**
 	 * {@inheritdocs}
 	 *
-	 * @param  string $instance Instance name
+	 * @param string $instance Instance name
+	 *
 	 * @return Supervisor
 	 */
 	public static function forge($instance = 'default')

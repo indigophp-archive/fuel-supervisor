@@ -14,9 +14,10 @@
     "require": {
         "composer/installers": "~1.0",
         "indigophp/fuel-core": "dev-develop",
-        "indigophp/supervisor": "self.version"
+        "indigophp/supervisor": "*"
     },
     "require-dev": {
+        "indigophp/supervisor": "dev-develop",
         "codeception/codeception": "~1.8.0",
         "codeception/mockery-module": "dev-master"
     },

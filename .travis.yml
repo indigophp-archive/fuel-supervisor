@@ -18,4 +18,4 @@ before_script:
 
 after_script:
   - cd /tmp/fuel/fuel/packages/supervisor/
-  - php ocular.phar code-coverage:upload --format=php-clover tests/_log/coverage.xml
+  - php ocular.phar code-coverage:upload --format=php-clover tests/_output/coverage.xml

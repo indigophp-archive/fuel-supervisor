@@ -14,4 +14,3 @@ before_script:
   - cp -r $TRAVIS_BUILD_DIR fuel/fuel/packages/supervisor/
   - cd fuel/fuel/packages/supervisor/
   - composer install
-  - wget https://scrutinizer-ci.com/ocular.phar

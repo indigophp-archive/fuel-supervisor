@@ -13,4 +13,4 @@ before_script:
   - oil create fuel
   - cp -r $TRAVIS_BUILD_DIR fuel/fuel/packages/supervisor/
   - cd fuel/fuel/packages/supervisor/
-  - composer install
+  - composer install --prefer-source

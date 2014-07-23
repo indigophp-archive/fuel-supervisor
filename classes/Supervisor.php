@@ -13,7 +13,6 @@ namespace Indigo\Fuel;
 
 use Indigo\Supervisor\Supervisor as SupervisorClass;
 use Indigo\Supervisor\Connector\ConnectorInterface;
-use InvalidArgumentException;
 
 /**
  * Supervisor Facade class
@@ -24,14 +23,17 @@ class Supervisor extends \Facade
 {
 	use \Indigo\Core\Facade\Instance;
 
+	/**
+	 * {@inheritdoc}
+	 */
 	protected static $_config = 'supervisor';
 
 	/**
-	 * {@inheritdocs}
+	 * {@inheritdoc}
 	 *
-	 * @param string $instance Instance name
+	 * @param string $instance
 	 *
-	 * @return Supervisor
+	 * @return Indigo\Supervisor\Supervisor
 	 */
 	public static function forge($instance = 'default')
 	{
@@ -39,7 +41,7 @@ class Supervisor extends \Facade
 
 		if ($connector instanceof ConnectorInterface === false)
 		{
-			throw new InvalidArgumentException('Invalid Connector');
+			throw new \InvalidArgumentException('Invalid Connector');
 		}
 
 		return static::newInstance($instance, new SupervisorClass($connector));

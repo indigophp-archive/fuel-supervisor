@@ -10,6 +10,7 @@ use Codeception\TestCase\Test;
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  *
  * @coversDefaultClass Indigo\Fuel\Supervisor
+ * @group              Supervisor
  */
 class SupervisorTest extends Test
 {
@@ -21,7 +22,6 @@ class SupervisorTest extends Test
 
 	/**
 	 * @covers ::forge
-	 * @group  Core
 	 */
 	public function testForge()
 	{
@@ -34,7 +34,6 @@ class SupervisorTest extends Test
 	/**
 	 * @covers            ::forge
 	 * @expectedException InvalidArgumentException
-	 * @group             Supervisor
 	 */
 	public function testForgeFailure()
 	{

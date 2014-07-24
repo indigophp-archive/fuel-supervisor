@@ -37,7 +37,8 @@ class Supervisor extends \Facade
 	 */
 	public static function forge($instance = 'default')
 	{
-		$connector = \Config::get('supervisor.' . $instance);
+		// Backwards Compatibility
+		$connector = \Config::get('supervisor.supervisor.' . $instance, \Config::get('supervisor.' . $instance));
 
 		if ($connector instanceof ConnectorInterface === false)
 		{

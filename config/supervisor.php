@@ -18,4 +18,14 @@
  * This will allow you to upgrade fuel without losing your custom config.
  */
 
-return array();
+return array(
+	/**
+	 * Supervisor Connector instances
+	 */
+	'supervisor' => array(),
+
+	/**
+	 * Listener instances
+	 */
+	'listener'   => array(),
+);

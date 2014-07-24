@@ -17,7 +17,7 @@ class SupervisorTest extends Test
 	public function _before()
 	{
 		Supervisor::_init();
-		\Config::set('supervisor.test', \Mockery::mock('Indigo\\Supervisor\\Connector\\ConnectorInterface'));
+		\Config::set('supervisor.supervisor.test', \Mockery::mock('Indigo\\Supervisor\\Connector\\ConnectorInterface'));
 	}
 
 	/**
@@ -26,6 +26,19 @@ class SupervisorTest extends Test
 	public function testForge()
 	{
 		$class = Supervisor::forge('test');
+
+		$this->assertInstanceOf('Indigo\\Supervisor\\Supervisor', $class);
+		$this->assertInstanceOf('Indigo\\Supervisor\\Connector\\ConnectorInterface', $class->getConnector());
+	}
+
+	/**
+	 * @covers ::forge
+	 */
+	public function testBc()
+	{
+		\Config::set('supervisor.bc', \Mockery::mock('Indigo\\Supervisor\\Connector\\ConnectorInterface'));
+
+		$class = Supervisor::forge('bc');
 
 		$this->assertInstanceOf('Indigo\\Supervisor\\Supervisor', $class);
 		$this->assertInstanceOf('Indigo\\Supervisor\\Connector\\ConnectorInterface', $class->getConnector());
